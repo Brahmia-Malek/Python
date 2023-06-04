@@ -1,0 +1,66 @@
+select * from dojos;
+INSERT INTO dojos ( id , name)
+VALUE ( 1 ,'Malek');
+INSERT INTO dojos ( id, name)
+VALUE ( 2,'Ayoub');
+INSERT INTO dojos (id, name)
+VALUE ( 3,'Aya');
+DELETE FROM dojos where id=1;
+DELETE FROM dojos where id=2;
+DELETE FROM dojos where id=3;
+INSERT INTO dojos ( id , name)
+VALUE ( 1 ,'Amine');
+INSERT INTO dojos ( id, name)
+VALUE ( 2,'Ahmed');
+INSERT INTO dojos (id, name)
+VALUE ( 3,'Rami');
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 1,'Mouayad','Brahmia','26');
+SELECT * from ninjas ;
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(1,1);
+SELECT * from dojos_has_ninjas;
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 2,'Ramzi','Ramzi','34');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(1,2);
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 3,'Marah','Brahmia','29');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(1,3);
+SELECT * from dojos_has_ninjas;
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 4,'Mouayad','Brahmia','26');
+SELECT * from ninjas ;
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(2,4);
+SELECT * from dojos_has_ninjas;
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 5,'Ramzi','Ramzi','34');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(2,5);
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 6,'Marah','Brahmia','29');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(2,6);
+SELECT * from dojos_has_ninjas;
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 7,'Mouayad','Brahmia','26');
+SELECT * from ninjas ;
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(3,7);
+SELECT * from dojos_has_ninjas;
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 8,'Ramzi','Ramzi','34');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(3,8);
+INSERT INTO ninjas ( id,first_name,last_name,age)
+VALUE( 9,'Marah','Brahmia','29');
+INSERT INTO dojos_has_ninjas(dojos_id,ninjas_id) 
+VALUE(3,9);
+SELECT * from dojos_has_ninjas;
+
+
+
+
+
