@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th >Name:</th>
+            <td style="font-size: xx-large;">{{session.name}}</td>
+        </tr>
+        <tr>
+            <th>Location:</th>
+            <td>{{ session.location }}</td>
+        </tr>
+        <tr>
+            <th>Favorite Language:</th>
+            <td>{{ session.language }}</td>
+        </tr>
+        <tr>
+            <th>Comment:</th>
+            <td>{{ session.comment }}</td>
+        </tr>
+
+    </table>
+    <a href="/clear">Home</a>
+
+    
+</body>
+</html>

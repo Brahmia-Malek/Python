@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <style>
+        
+
+        * {
+            margin : 0px;
+            padding: 0px;
+
+        }
+        /* Style the h1 */
+        h1{
+            text-align: center;
+        }
+        /* Style the form layout */
+         form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid black;
+            
+            
+            
+
+         }
+            
+        
+        /* Style the form fields */
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        /* Style the submit button */
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+    <form action='/process' method="post" >
+        <div>
+            <label for="name">Name:</label>
+            <input type="text"  name="name" id="name">
+        </div>
+        <div>
+            <label for="location">Dojo Location:</label>
+            <select id="lacation" name="location">
+                <option value="Chigago">Chigago</option>
+                <option value="online">online</option>
+                <option value="San jose">San jose</option>
+                
+              </select>
+        </div>
+        <div>
+            <label for="language">Favorite Language:</label>
+            <select id="language" name="language">
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="javascript">javascript</option>
+              </select>
+        </div>
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea  name="comment" id="comment" ></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+
+    
+
